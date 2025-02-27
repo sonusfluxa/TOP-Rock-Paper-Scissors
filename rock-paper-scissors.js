@@ -14,7 +14,27 @@ function getComputerChoice(randomNumber) {
     }
 }
 
-var computerChoice = getComputerChoice(randomNumber);
+let computerChoice = getComputerChoice(randomNumber);
+
+// prompt("rock paper scissors?")
+
+function getHumanChoice() {
+    let choice = prompt("rock paper scissors?")
+    
+    if (choice == "rock") {
+        return "rock"
+    }
+    else if (choice == "paper") {
+        return "paper"
+    }
+    else if (choice == "scissors") {
+        return "scissors"
+    }
+    else return "try again"
+}
+
+let humanChoice = getHumanChoice();
 
 console.log(randomNumber);
-console.log(computerChoice);
+console.log("computer chooses: " + computerChoice);
+console.log("you choose: " + humanChoice);
