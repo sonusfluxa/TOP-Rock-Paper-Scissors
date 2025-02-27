@@ -35,6 +35,11 @@ function getHumanChoice() {
 
 let humanChoice = getHumanChoice();
 
+let humanScore = 0;
+let computerScore = 0;
+
 console.log(randomNumber);
 console.log("computer chooses: " + computerChoice);
 console.log("you choose: " + humanChoice);
+console.log(humanScore);
+console.log(computerScore);
